@@ -6,7 +6,7 @@ Crafting a digital narrative that reflects my professional journey, my personal 
 
 Developed using basic web development techniques i.e. HTML5, CSS3 and JavaScript.
 
-### Features Implemented 
+## Features Implemented 
 
 ✔️ Easy to modify  
 
