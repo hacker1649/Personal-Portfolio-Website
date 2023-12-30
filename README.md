@@ -7,7 +7,12 @@ Developed using basic web development techniques i.e. HTML5, CSS3 and JavaScript
 ### Features Implemented 
 
 ✔️ Easy to modify  
+
 ✔️ Valid HTML5, CSS3 and JavaScript  
+
 ✔️ Typing animation using `Typed.js` JavaScript library  
+
 ✔️ The sections included in the portfolio are Home, Download Resume, About Me, Skills, Experience, Education, My Services, My Projects and Contact Me.  
+
 ✔️ Contact Form API using [Web3Forms](https://web3forms.com/) through which you can receive your html contact form submissions directly in your email inbox without any server or backend code.
+
