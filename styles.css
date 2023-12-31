@@ -17,6 +17,7 @@ body {
 /* header section implementation */
 
 #header {
+    padding: 10px 7%;
     margin-top: 8px;
     width: 100%;
     height: 100vh;
@@ -29,12 +30,14 @@ body {
     color: skyblue;
 }
 
-.container {
-    padding: 10px 8%;
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-nav h1 {
-    font-size: 45px;
+.box h1 {
+    font-size: 40px;
     color: white;
     filter: drop-shadow(2px 0px 0px skyblue);
 }
@@ -84,6 +87,53 @@ nav ul li a:hover::after {
 
 nav ul li a:hover {
     color: skyblue;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu {
+    transition: ease-in-out;
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 40%;
+    width: 100%;
 }
 
 .header-txt {
@@ -156,7 +206,7 @@ nav ul li a:hover {
 /* about section implementation */
 
 #about {
-    padding: 20px 0;
+    padding: 20px 7%;
     color: White;
     margin-top: 12px;
 }
@@ -182,19 +232,22 @@ nav ul li a:hover {
 }
 
 .col-2 h1 {
+    margin-top: 5px;
     font-size: 60px;
     color: rgb(0, 150, 235);
     filter: drop-shadow(2px 0px 0px skyblue);
 }
 
 .col-2 p {
+    margin-top: 5px;
     font-size: 14px;
+    text-align: justify;
     color: lavender;
 }
 
 .tab-titles {
     display: flex;
-    margin: 3px 0 15px;
+    margin: 10px 0 20px;
 }
 
 .tab-titles p {
@@ -204,8 +257,6 @@ nav ul li a:hover {
 
 .tab-links {
     margin-right: 50px;
-    font-size: 20px;
-    font-weight: 500;
     cursor: pointer;
     position: relative;
     padding: 2px;
@@ -235,7 +286,7 @@ nav ul li a:hover {
 }
 
 .tab-contents ul li {
-    font-size: 13.5px;
+    font-size: 14px;
 }
 
 .tab-contents ul li span {
@@ -265,7 +316,7 @@ nav ul li a:hover {
 /* services section implementation */
 
 #services {
-    padding: 10px 0;
+    padding: 20px 7%;
 }
 
 .services-list {
@@ -316,7 +367,7 @@ nav ul li a:hover {
 /* projects section implementation */
 
 #projects {
-    padding: 10px 0;
+    padding: 20px 7%;
 }
 
 .work-list {
@@ -346,7 +397,7 @@ nav ul li a:hover {
 
 .title {
     text-align: center;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     color: white;
 }
@@ -357,8 +408,8 @@ nav ul li a:hover {
 }
 
 .description p {
-    font-size: 11px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 1.5;
 }
 
@@ -394,8 +445,12 @@ nav ul li a:hover {
 /* contacts section implementation */
 
 #contact {
-    padding: 10px 0;
+    padding: 20px 7%;
     margin-bottom: 20px;
+}
+
+.row {
+    flex-direction: row;
 }
 
 .contact-left {
@@ -409,11 +464,6 @@ nav ul li a:hover {
 .contact-right p {
     margin-top: 10px;
     font-size: 14px;
-}
-
-.contact-right p i {
-    margin-right: 15px;
-    font-size: 25px;
 }
 
 .avatar img {
@@ -505,6 +555,7 @@ form .button {
 /* footer section implementation */
 
 footer{
+    font-size: 14px;
     background: #111;
     padding: 15px 23px;
     color: #fff;
@@ -519,3 +570,176 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+
+/* Media Query for tablets and smaller screens */
+@media only screen and (max-width: 768px) {
+    #header {
+        height: auto;
+        background-size: cover;
+    }
+
+    #header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    .mobile-menu li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 30px;
+    }
+    
+    .mobile-menu li a{
+        text-decoration: none;
+        color: lavender;
+        font-size: 19px;
+        position: relative;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+    
+    .mobile-menu li a::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        background: rgb(0, 183, 255);
+        position: absolute;
+        color: skyblue;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    
+    .mobile-menu li a:hover::after {
+        width: 90%;
+        transform: scale(1.2x);
+        border: 1px solid rgb(0, 0, 0);
+        background: rgb(0, 183, 255);
+        color: lavender;
+        transition: 0.5s;
+    }
+    
+    .mobile-menu li a:hover {
+        color: skyblue;
+    }
+
+    .box h1 {
+        font-size: 28px;
+    }
+
+    .header-txt {
+        margin-top: 80%;
+    }
+
+    .header-txt h1 {
+        text-align: start;
+        font-size: 30px;
+        margin-top: 90%;
+    }
+
+    .header-txt p {
+        text-align: start;
+        font-size: 17px;
+    }
+
+    .intro {
+        margin-right: 10px;
+    }
+
+    .intro p {
+        font-size: 14px;
+        text-align: justify;
+        margin-right: 10px;
+    }
+
+    .intro a {
+        font-size: 14px;
+    }
+
+    #about .row {
+        flex-direction: column;
+    }
+
+    .col-1 img {
+        width: 100%;
+        height: 10%;
+        margin-bottom: 10px;
+    }
+
+    .col-2 {
+        flex-basis: 100%;
+    }
+
+    .col-2 h1 {
+        font-size: 35px;
+    }
+
+    .tab-titles {
+        flex-direction: row;
+        align-items: start;
+        margin: 20px 0 20px;
+    }
+
+    .tab-links {
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .tab-links:hover {
+        color: skyblue;
+    }
+
+    .tab-contents ul li {
+        font-size: 14px;
+    }
+
+    .services-list,
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .sub-title {
+        font-size: 35px;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .contact-right {
+        text-align: justify;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-basis: 100%;
+    }
+
+    .contact-left {
+        margin-bottom: 10px;
+        flex-basis: 100%;
+    }
+
+    .social-icons a {
+        font-size: 22px;
+        margin-right: 10px;
+    }
+
+    .button {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .contact-left form {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px 23px;
+    }
+}
+
+
