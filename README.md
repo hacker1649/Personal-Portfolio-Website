@@ -10,6 +10,8 @@ Developed using basic web development techniques i.e. HTML5, CSS3 and JavaScript
 
 ✔️ Easy to modify  
 
+✔️ Fully responsive website 
+
 ✔️ Valid HTML5, CSS3 and JavaScript  
 
 ✔️ Typing animation using `Typed.js` JavaScript library  
