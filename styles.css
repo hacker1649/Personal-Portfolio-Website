@@ -57,7 +57,7 @@ nav ul li {
 
 nav ul li a{
     text-decoration: none;
-    color: lavender;
+    color: white;
     font-size: 19px;
     position: relative;
     font-weight: bold;
@@ -81,7 +81,7 @@ nav ul li a:hover::after {
     transform: scale(1.2x);
     border: 1px solid rgb(0, 0, 0);
     background: rgb(0, 183, 255);
-    color: lavender;
+    color: white;
     transition: 0.5s;
 }
 
@@ -180,19 +180,18 @@ nav ul li a:hover {
 .intro a:hover {
     transform: scale(1.2x);
     border: 1px solid rgba(0, 0, 0, 0);
-    background: lavender;
+    background: white;
     color: black;
     transition: .7s;
     filter: blur(0.2px);
 }
 
 .intro p {
-    color: lavender;
+    color: white;
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
     margin-right: 690px;    
-    text-align: justify;
 }
 
 .intro b {
@@ -241,8 +240,7 @@ nav ul li a:hover {
 .col-2 p {
     margin-top: 5px;
     font-size: 14px;
-    text-align: justify;
-    color: lavender;
+    color: white;
 }
 
 .tab-titles {
@@ -431,7 +429,7 @@ nav ul li a:hover {
 .description a:hover {
     transform: scale(1.2x);
     border: 1px solid rgba(0, 0, 0, 0);
-    background: lavender;
+    background: white;
     color: black;
     transition: .7s;
     filter: blur(0.2px);
@@ -496,7 +494,7 @@ nav ul li a:hover {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: lavender;
+    color: white;
     display: inline-block;
     transition: transform 0.5s;
 }
@@ -523,7 +521,7 @@ nav ul li a:hover {
 .button:hover {
     transform: scale(1.2x);
     border: 1px solid rgba(0, 0, 0, 0);
-    background: lavender;
+    background: white;
     color: black;
     transition: .7s;
     filter: blur(0.2px);
@@ -594,7 +592,7 @@ footer span a:hover{
     
     .mobile-menu li a{
         text-decoration: none;
-        color: lavender;
+        color: white;
         font-size: 19px;
         position: relative;
         font-weight: bold;
@@ -616,9 +614,9 @@ footer span a:hover{
     .mobile-menu li a:hover::after {
         width: 90%;
         transform: scale(1.2x);
-        border: 1px solid rgb(0, 0, 0);
+        border: 1px solid rgb(0,0, 0);
         background: rgb(0, 183, 255);
-        color: lavender;
+        color: white;
         transition: 0.5s;
     }
     
@@ -651,7 +649,6 @@ footer span a:hover{
 
     .intro p {
         font-size: 14px;
-        text-align: justify;
         margin-right: 10px;
     }
 
